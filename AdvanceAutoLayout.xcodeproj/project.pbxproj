@@ -13,6 +13,7 @@
 		7692CF3C2AE225C4002555F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7692CF3A2AE225C4002555F1 /* Main.storyboard */; };
 		7692CF3E2AE225C6002555F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7692CF3D2AE225C6002555F1 /* Assets.xcassets */; };
 		7692CF412AE225C6002555F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7692CF3F2AE225C6002555F1 /* LaunchScreen.storyboard */; };
+		7692CF492AE22F35002555F1 /* ModifyConstrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692CF482AE22F35002555F1 /* ModifyConstrainsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7692CF3D2AE225C6002555F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7692CF402AE225C6002555F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7692CF422AE225C6002555F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7692CF482AE22F35002555F1 /* ModifyConstrainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyConstrainsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7692CF3D2AE225C6002555F1 /* Assets.xcassets */,
 				7692CF3F2AE225C6002555F1 /* LaunchScreen.storyboard */,
 				7692CF422AE225C6002555F1 /* Info.plist */,
+				7692CF482AE22F35002555F1 /* ModifyConstrainsViewController.swift */,
 			);
 			path = AdvanceAutoLayout;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				7692CF392AE225C4002555F1 /* ViewController.swift in Sources */,
 				7692CF352AE225C4002555F1 /* AppDelegate.swift in Sources */,
+				7692CF492AE22F35002555F1 /* ModifyConstrainsViewController.swift in Sources */,
 				7692CF372AE225C4002555F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
