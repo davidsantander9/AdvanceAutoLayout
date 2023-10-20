@@ -36,7 +36,7 @@
                                 <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY1-am-SOM">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="167.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="133.33333333333334"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Position Contrains"/>
                                         <connections>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmA-OZ-27Y">
-                                        <rect key="frame" x="0.0" y="171.66666666666669" width="361" height="168"/>
+                                        <rect key="frame" x="0.0" y="137.33333333333331" width="361" height="133.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Height and Width constrains"/>
                                         <connections>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AD-wj-FD8">
-                                        <rect key="frame" x="0.0" y="343.66666666666669" width="361" height="167.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="274.66666666666669" width="361" height="133.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Modify constrians with code"/>
                                         <connections>
@@ -60,11 +60,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4y-vA-Pb4">
-                                        <rect key="frame" x="0.0" y="515.33333333333337" width="361" height="167.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="412.33333333333337" width="361" height="133.33333333333337"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create constrians with code"/>
                                         <connections>
                                             <segue destination="DMg-sN-mVk" kind="show" id="dpV-UA-vvE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnL-ei-c0H">
+                                        <rect key="frame" x="0.0" y="549.66666666666663" width="361" height="133.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Equaly constrains"/>
+                                        <connections>
+                                            <segue destination="mSz-j5-jX8" kind="show" id="OV3-8f-8ND"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -84,6 +92,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-205" y="-44"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LsQ-5v-F8P">
+            <objects>
+                <viewController id="mSz-j5-jX8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="reG-Hr-gfd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQ2-qY-pa9">
+                                <rect key="frame" x="16" y="119" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BA2-lc-8KM"/>
+                                    <constraint firstAttribute="height" constant="200" id="iXp-2M-Gg1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAd-jq-kTG">
+                                <rect key="frame" x="177" y="602" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vgw-Hu-lPL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vgw-Hu-lPL" firstAttribute="trailing" secondItem="aAd-jq-kTG" secondAttribute="trailing" constant="16" id="4HS-qw-Gzw"/>
+                            <constraint firstItem="EQ2-qY-pa9" firstAttribute="top" secondItem="Vgw-Hu-lPL" secondAttribute="top" constant="16" id="5Rt-I4-E3a"/>
+                            <constraint firstItem="aAd-jq-kTG" firstAttribute="width" secondItem="EQ2-qY-pa9" secondAttribute="width" id="IWc-iX-rmk"/>
+                            <constraint firstItem="EQ2-qY-pa9" firstAttribute="leading" secondItem="Vgw-Hu-lPL" secondAttribute="leading" constant="16" id="O6B-Wb-3AB"/>
+                            <constraint firstItem="Vgw-Hu-lPL" firstAttribute="bottom" secondItem="aAd-jq-kTG" secondAttribute="bottom" constant="16" id="aDF-hU-td7"/>
+                            <constraint firstItem="aAd-jq-kTG" firstAttribute="height" secondItem="EQ2-qY-pa9" secondAttribute="height" id="va7-pf-Oxg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tkA-iV-WOI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Tg-xr-jAB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="351"/>
         </scene>
         <!--Create Constrains View Controller-->
         <scene sceneID="Rqm-yn-d2g">
@@ -109,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ie-kA-P2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="425"/>
+            <point key="canvasLocation" x="3390" y="-468"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nFp-YE-g6M">
@@ -237,6 +283,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
