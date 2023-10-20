@@ -36,7 +36,7 @@
                                 <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY1-am-SOM">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="133.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="110.66666666666667"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Position Contrains"/>
                                         <connections>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmA-OZ-27Y">
-                                        <rect key="frame" x="0.0" y="137.33333333333331" width="361" height="133.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="114.66666666666666" width="361" height="110.33333333333334"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Height and Width constrains"/>
                                         <connections>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AD-wj-FD8">
-                                        <rect key="frame" x="0.0" y="274.66666666666669" width="361" height="133.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="228.99999999999997" width="361" height="110.66666666666666"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Modify constrians with code"/>
                                         <connections>
@@ -60,7 +60,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4y-vA-Pb4">
-                                        <rect key="frame" x="0.0" y="412.33333333333337" width="361" height="133.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="343.66666666666669" width="361" height="110.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create constrians with code"/>
                                         <connections>
@@ -68,11 +68,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnL-ei-c0H">
-                                        <rect key="frame" x="0.0" y="549.66666666666663" width="361" height="133.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="458.00000000000006" width="361" height="110.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Equaly constrains"/>
                                         <connections>
                                             <segue destination="mSz-j5-jX8" kind="show" id="OV3-8f-8ND"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-GS-O9i">
+                                        <rect key="frame" x="0.0" y="572.66666666666663" width="361" height="110.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Proportion constrains"/>
+                                        <connections>
+                                            <segue destination="VbF-f3-H16" kind="show" id="hKj-gI-l0d"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,6 +100,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-205" y="-44"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zVq-bM-7wS">
+            <objects>
+                <viewController id="VbF-f3-H16" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VDq-Jc-vRM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gV-RB-mJI">
+                                <rect key="frame" x="16" y="119" width="361" height="361"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgU-k3-tDH">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="120.33333333333333"/>
+                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rgU-k3-tDH" secondAttribute="trailing" id="6zv-hl-9Lu"/>
+                                    <constraint firstAttribute="width" secondItem="5gV-RB-mJI" secondAttribute="height" multiplier="1:1" id="9aG-aT-igU"/>
+                                    <constraint firstItem="rgU-k3-tDH" firstAttribute="leading" secondItem="5gV-RB-mJI" secondAttribute="leading" id="NgO-5T-Ep9"/>
+                                    <constraint firstItem="rgU-k3-tDH" firstAttribute="height" secondItem="5gV-RB-mJI" secondAttribute="height" multiplier="1:3" id="cIa-pq-3KO"/>
+                                    <constraint firstItem="rgU-k3-tDH" firstAttribute="top" secondItem="5gV-RB-mJI" secondAttribute="top" id="qmv-PK-rPX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M8P-39-VNQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5gV-RB-mJI" firstAttribute="top" secondItem="M8P-39-VNQ" secondAttribute="top" constant="100" id="AFp-I9-0Fl"/>
+                            <constraint firstItem="5gV-RB-mJI" firstAttribute="leading" secondItem="M8P-39-VNQ" secondAttribute="leading" constant="25" id="Egq-e4-gy5"/>
+                            <constraint firstItem="M8P-39-VNQ" firstAttribute="trailing" secondItem="5gV-RB-mJI" secondAttribute="trailing" constant="25" id="RYJ-O4-pLs"/>
+                            <constraint firstItem="5gV-RB-mJI" firstAttribute="leading" secondItem="M8P-39-VNQ" secondAttribute="leading" constant="16" id="Xa2-eO-CEn"/>
+                            <constraint firstItem="5gV-RB-mJI" firstAttribute="top" secondItem="M8P-39-VNQ" secondAttribute="top" constant="16" id="fHY-9h-wc3"/>
+                            <constraint firstItem="M8P-39-VNQ" firstAttribute="trailing" secondItem="5gV-RB-mJI" secondAttribute="trailing" constant="16" id="ke1-uf-CPU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="32T-ot-VPV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oT1-WM-feS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="471"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LsQ-5v-F8P">
@@ -129,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Tg-xr-jAB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="351"/>
+            <point key="canvasLocation" x="4115" y="-468"/>
         </scene>
         <!--Create Constrains View Controller-->
         <scene sceneID="Rqm-yn-d2g">
